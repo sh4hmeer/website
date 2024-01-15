@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fbd4c93074.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#cooptitle">Work Term</a></li>
+                <li><a href="#services">Takeaways</a></li>
+                <!--<li><a href="#">Portfolio</a></li>--->
+                <!--<li><a href="#">Contact</a></li>--->
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Aspiring Software Engineer</p>
+            <h1>Hi, I'm <br><span>Shahmeer </span>Shahid</h1>
+        </div>
+    </div>
+</div>
+
+<div id="cooptitle">
+    <div class="container">
+        <h1 class="term-title"><br><span>Fall</span> 20<span>23</span> Work Term</h1>
+    </div>
+</div>
+<!------- about section ------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/New.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Bombardier</h1>
+                <p>As a software developer, I worked jointly with the Methods team, resolving the issues that arose in the production line of aircrafts. Surrounded by all kinds of engineers, I was given the opportunity to gain hands-on experience from many great minds and watch the work I did truly make a difference.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('overview')">Overview</p>
+                    <p class="tab-links" onclick="opentab('learninggoals')">Learning Goals</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="overview">
+                    <ul>
+                        <li>A typical day of work required me to:<br><br><span>- Attend Boardwalk meetings (Daily standup to acquire the plan of the day)</span></li>
+                        <li><span>- Update NCR’s (Non-Conformance Reports)</span></li>
+                        <li><span>- Format the list of NCR’s into an Excel. (Used by supervisors in their meeting)</span></li>
+                        <li><span>- Pursue side projects for the company in any downtime</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="learninggoals">
+                    <ul>
+                        <li>I started the work term with a few goals in mind, such as:<br><br><span>- Pushing myself to be creative and think outside the box</span></li>
+                        <li><span>- Not shying away from a new work environment and applying myself</span></li>
+                        <li><span>- Communicating effectively in the work I do and to the people I meet</span></li>
+                        <li><span>- Asking questions whenever I seek clarification</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li>Some skills I had the chance to develop include: <br><br><span>- Communication skills</span></li>
+                        <li><span>- Time management skills</span></li>
+                        <li><span>- Programming abilities</span></li>
+                        <li><span>- Utilizing Artificial Intelligence</span></li>
+                        <li><span>- Problem solving skills</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------ learned ------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">What did I learn?</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-user-secret"></i>
+                <h2>Anomaly Detection</h2>
+                <p>One of the major projects I worked on was the Foreign Object Debris (FOD) Detection System. FOD’s are any objects found inside of an aircraft that should not be left there, such as spare tools, safety goggles, or even a lighter. When I noticed that FOD’s are seemingly harmless but can be detrimental to an aircraft, what started simply as an idea became a full scale project with the end goal of creating some sort of system to detect possible FOD’s. Pursuing a project I was very passionate about at the office made me learn a great deal on working with Artificial Intelligence, automation, and even sharpened my Python skills. I also was able to work with technology I had never even heard of before, like Raspberry PI and OpenCV. It was quite a journey to have gone from formulating a cool idea, to doing an incredible amount of research, to putting in the work and finally watching it all come to fruition, and that kind of learning and experience was invaluable.<br><br>A frame of this project running is shown in the figure above. In my hands, I hold a lighter and a screwdriver, which are both FOD’s. The trained AI model is able to detect these objects, identify them, and produce a percentage on how confident it is that the identification is correct.</p>
+                <!--<a href="#">Learn more</a>-->
+            </div>
+            <div>
+                <i class="fa-solid fa-pencil"></i>
+                <h2>Non-Conformance Reports</h2>
+                <p>In the making of an aircraft, the trajectory of creation is never a steady incline, and because it is inevitable that delays and issues will be raised, the better the workers communicate, the quicker there can be a solution. Non-conformance reports, or NCR’s for short, are what the production team raises whenever there is an issue with a part in the aircraft, and the Methods team is the in-between to liaise these NCR’s to the Quality Assurance team, and receive feedback on what the next step is. My role allowed me to accurately depict what the NCR’s being sent from Production were, and organize them in a manner that can be easily transferred to Quality Assurance. I also learned a great deal of Excel, by outputting the NCR’s from the dashboard onto a spreadsheet and organizing them in a manner that can be presented in team meetings. I took it a step further by diving into a mini-project, which gathered all the NCR’s across all the aircrafts and graphed them on a weekly basis in an automated manner, showcasing trends in how the raised NCR’s are being closed as the weeks progress. This display of trends became a wide success not only in team meetings, but also quite simply in the closing of NCR’s.</p>
+                <!--<a href="#">Learn more</a>-->
+            </div>
+            <div>
+                <i class="fa-solid fa-list-check"></i>
+                <h2>Project Management</h2>
+                <p>Working as a software developer intern seemed like I would be bound to all things software, but in actuality I dove into many different fields. While working with aircrafts led to a great deal of focus on aerospace, I also worked on projects of varying lengths, and thus learned about project management. The making of an aircraft has become fairly predictable and repetitive, and thus my role in the Methods team, viewing each aircraft as an individual project meant I had a timeline written out for me. However when it came to working on my own projects, I had no idea on what kind of time and effort it would require to see the project through. Theorizing a rough timeline that I could bring to my supervisor quickly fell apart the moment I hit a hiccup, be it from reaching a sticking point in the project, or be it from the inability to produce any spare time to work on the project because it was a busy day of NCR’s at the office. Due to this, I began to understand how to best manage my time, and more to the point, how to manage a project. I learned the importance of creating buffers within a project timeline, accounting for any possible delays, as well as how to be realistic with formulating a completion date. I also went the extra mile by researching features of project management, such as a scope, time and budget, and constructed a timeline I could not only use to visually showcase the project to my supervisor, but to also aid me in adhering to my goals and keeping myself accountable.</p>
+                <!--<a href="#">Learn more</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+</body>
+</html>
