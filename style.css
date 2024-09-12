@@ -134,7 +134,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1-s24 img {
-    width: 70%; 
+    width: 60%; 
     height: auto; 
     max-width: 100%; 
     object-fit: contain; 
