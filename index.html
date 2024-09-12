@@ -33,6 +33,8 @@
         <h1 class="term-title"><br><span>Fall</span> 20<span>23</span> Work Term</h1>
     </div>
 </div>
+
+<!------- F23 Section --------------->
 <!------- about section ------------->
 <div id="about">
     <div class="container">
@@ -45,10 +47,13 @@
                 <p>As a software developer, I worked jointly with the Methods team, resolving the issues that arose in the production line of aircrafts. Surrounded by all kinds of engineers, I was given the opportunity to gain hands-on experience from many great minds and watch the work I did truly make a difference.</p>
 
                 <div class="tab-titles">
+                    <!-- Use common class and pass the unique tab content IDs -->
                     <p class="tab-links active-link" onclick="opentab('overview')">Overview</p>
                     <p class="tab-links" onclick="opentab('learninggoals')">Learning Goals</p>
                     <p class="tab-links" onclick="opentab('skills')">Skills</p>
                 </div>
+
+                <!-- Use unique IDs for each tab content -->
                 <div class="tab-contents active-tab" id="overview">
                     <ul>
                         <li>A typical day of work required me to:<br><br><span>- Attend Boardwalk meetings (Daily standup to acquire the plan of the day)</span></li>
@@ -57,6 +62,7 @@
                         <li><span>- Pursue side projects for the company in any downtime</span></li>
                     </ul>
                 </div>
+
                 <div class="tab-contents" id="learninggoals">
                     <ul>
                         <li>I started the work term with a few goals in mind, such as:<br><br><span>- Pushing myself to be creative and think outside the box</span></li>
@@ -65,9 +71,10 @@
                         <li><span>- Asking questions whenever I seek clarification</span></li>
                     </ul>
                 </div>
+
                 <div class="tab-contents" id="skills">
                     <ul>
-                        <li>Some skills I had the chance to develop include: <br><br><span>- Communication skills</span></li>
+                        <li>Some skills I had the chance to develop include:<br><br><span>- Communication skills</span></li>
                         <li><span>- Time management skills</span></li>
                         <li><span>- Programming abilities</span></li>
                         <li><span>- Utilizing Artificial Intelligence</span></li>
@@ -122,6 +129,110 @@
     }
 
 </script>
+
+<!------- S24 Section --------------->
+
+<div id="cooptitle"></div>
+    <div class="container">
+        <h1 class="term-title2"><br><span>Summer</span> 20<span>24</span> Work Term</h1>
+    </div>
+</div>
+
+<!------- about section ------------->
+<div id="about">
+    <div class="container">
+        <div class="row-s24">
+            <div class="about-col-1-s24">
+                <img src="images/chatbot.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Onward Manufacturing</h1>
+                <p>As a web developer, I worked closely with the CEO, designing the website closely aligned with his vision. Cooperating with the Graphics and Marketing team, I was able to learn a lot about how meticulous designing even a simple website can be, and how to account for all kinds of nuances.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('overview-s24')">Overview</p>
+                    <p class="tab-links" onclick="opentab('learninggoals-s24')">Learning Goals</p>
+                    <p class="tab-links" onclick="opentab('skills-s24')">Skills</p>
+                </div>
+
+                <!-- Use unique IDs for the S24 section -->
+                <div class="tab-contents" id="overview-s24">
+                    <ul>
+                        <li>A typical day of work required me to:<br><br><span>- Attend morning meetings to learn my daily tasks, and update the team on my progress.</span></li>
+                        <li><span>- Tend to any issues raised by other team members accessing the website.</span></li>
+                        <li><span>- Update any outstanding issues or tasks on ClickUp to prioritize based on urgency.</span></li>
+                        <li><span>- Pursue side projects for the company in any downtime.</span></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="learninggoals-s24">
+                    <ul>
+                        <li>I started the work term with a few goals in mind, such as:<br><br><span>- Learning how to apply my frontend developing skills.</span></li>
+                        <li><span>- Applying myself and being creative with my pursuits.</span></li>
+                        <li><span>- Communicating effectively in the work I do and to the people I meet</span></li>
+                        <li><span>- Asking questions whenever I seek clarification</span></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="skills-s24">
+                    <ul>
+                        <li>Some skills I had the chance to develop include:<br><br><span>- Frontend coding skills</span></li>
+                        <li><span>- Time management skills</span></li>
+                        <li><span>- Programming abilities</span></li>
+                        <li><span>- Utilizing Artificial Intelligence</span></li>
+                        <li><span>- Problem-solving skills</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------ learned ------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">What did I learn?</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-user-secret"></i>
+                <h2>AI Chatbot Development</h2>
+                <p>One of the key projects I took on was the creation of an AI chatbot for the Broil King website. This chatbot was designed to assist users by answering questions related to Broil King barbeque grills and their features. To achieve this, I trained a model that could efficiently navigate through a vast amount of data specific to the company’s product line. One of the biggest challenges was restricting the chatbot’s knowledge base solely to the information available on the Broil King website. By limiting its responses, I ensured that users received accurate answers grounded in the company's actual product information without the risk of outside data skewing the results. This task allowed me to grow my knowledge in AI, machine learning, and natural language processing, as well as hone my Python programming skills. Bringing this project to life required persistence and meticulous testing, but seeing the chatbot successfully assist customers was immensely rewarding.</p>
+                <!--<a href="#">Learn more</a>-->
+            </div>
+            <div>
+                <i class="fa-solid fa-pencil"></i>
+                <h2>Dynamic FAQ Page</h2>
+                <p>In addition to the chatbot, I developed a dynamic FAQ page using HTML, CSS, JavaScript, and React. The challenge here was to work outside the existing WordPress and PHP-based infrastructure that the website was originally built on. Instead of refactoring legacy code, I focused on building a stand-alone page that could guide users to the ideal grill. The FAQ page utilized a multi-level filtering system, allowing users to navigate through various features such as grill size, fuel type, and cooking preferences to receive a personalized product suggestion. This project not only sharpened my front-end development skills but also allowed me to creatively tackle UX/UI challenges. The page became a valuable tool for both customers and the marketing team by streamlining the purchasing decision-making process. I was proud to see it being actively used and well-received by both teams.</p>
+                <!--<a href="#">Learn more</a>-->
+            </div>
+            <div>
+                <i class="fa-solid fa-list-check"></i>
+                <h2>Cross-functional Collaboration</h2>
+                <p>Working as a web developer, I initially had no idea what to expect, but the opportunity to work independently and closely with the CEO allowed me to grow immensely in both technical and interpersonal skills. From working on complex code to communicating project progress across teams, I became adept at problem-solving in real time. With frequent interactions with departments not only in Canada but also in the US, Germany, the UK, and other countries, I learned how to effectively collaborate across borders. One of my most valuable contributions was keeping track of website-related issues raised by various teams, prioritizing them based on urgency, and ensuring that they were completed in a timely manner. The combination of my technical work, along with the communication and coordination skills I developed, left me with a deep appreciation for the complexities of web development within a global enterprise.</p>
+                <!--<a href="#">Learn more</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function opentab(tabname) {
+        // First, remove active class from all tab links and tab contents
+        var allTabLinks = document.getElementsByClassName("tab-links");
+        var allTabContents = document.getElementsByClassName("tab-contents");
+
+        for (var tablink of allTabLinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of allTabContents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        // Then, activate the clicked tab and its associated content
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
 
 </body>
 </html>

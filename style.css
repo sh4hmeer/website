@@ -82,9 +82,21 @@ nav ul li a:hover::after{
     font-size: 50px;
     font-weight: 600;
     color: #fff;
+    text-align: right;
 }
 
 .term-title span{
+    color: #ff004f;
+}
+
+.term-title2{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+}
+
+.term-title2 span{
     color: #ff004f;
 }
 
@@ -100,14 +112,35 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 
+.row-s24 {
+    display: flex;
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+}
+
 .about-col-1{
     flex-basis: 35%;
+}
+
+.about-col-1-s24 {
+    flex-basis: auto; 
+    margin-left: auto;
+    margin-right: 0; 
 }
 
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
 }
+
+.about-col-1-s24 img {
+    width: 70%; 
+    height: auto; 
+    max-width: 100%; 
+    object-fit: contain; 
+    border-radius: 15px;
+}
+
 
 .about-col-2{
     flex-basis: 60%;
@@ -118,7 +151,7 @@ nav ul li a:hover::after{
 }
 
 .sub-title{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
     color: #fff;
 }
@@ -167,10 +200,6 @@ nav ul li a:hover::after{
 
 .tab-contents.active-tab{
     display: block;
-}
-
-.term-title {
-    text-align: right;
 }
 
 #services{
