@@ -20,7 +20,7 @@
         <li><a href="#cooptitle-f23">F23</a></li>
         <li><a href="#cooptitle-s24">S24</a></li>
         <li><a href="#cooptitle-w25">W25</a></li>
-        <li><a href="#cooptitle-s25">S25/a></li>
+        <li><a href="#cooptitle-s25">S25</a></li>
       </ul>
     </nav>
     <div class="header-text">
@@ -37,10 +37,10 @@
     </div>
   </div>
   
-  <div id="about-f23">
+  <div id="about">
     <div class="container">
-      <div class="row-f23">
-        <div class="about-col-1-f23">
+      <div class="row">
+        <div class="about-col-1">
           <img src="images/New.jpg">
         </div>
         <div class="about-col-2">
@@ -190,7 +190,7 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img src="images/w25_presentation_placeholder.png" alt="Winter 2025 Presentation">
+          <img src="images/MHI_Winter.jpg" alt="Winter 2025 Presentation">
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">MHICA (Mississauga)</h1>
@@ -202,26 +202,26 @@
           </div>
           <div class="tab-contents active-tab" id="overview-w25">
             <ul>
-              <li>Led the creation and delivery of a corporate presentation on MHICA to key stakeholders including Pierre Poilievre.</li>
-              <li>Explored object detection AI to improve inspection processes within aircraft production.</li>
-              <li>Worked temporarily as a production worker (e.g., riveting) to gain insight into on-floor challenges and better align AI development with real needs.</li>
-              <li>Gathered requirements and wrote user stories for a future internal intranet website.</li>
+              <li><span>- Led the creation and delivery of a corporate presentation on MHICA to key stakeholders including Pierre Poilievre.</li>
+              <li><span>- Explored object detection AI to improve inspection processes within aircraft production.</li>
+              <li><span>- Worked temporarily as a production worker (e.g., riveting) to gain insight into on-floor challenges and better align AI development with real needs.</li>
+              <li><span>- Gathered requirements and wrote user stories for a future internal intranet website.</li>
             </ul>
           </div>
           <div class="tab-contents" id="learninggoals-w25">
             <ul>
-              <li>Improve public communication and executive-level presentation skills.</li>
-              <li>Understand production challenges firsthand to inform AI development.</li>
-              <li>Practice real-world applications of Agile, Waterfall, and Lean UX methodologies.</li>
-              <li>Lay foundational work for long-term digital tools in the company.</li>
+              <li><span>- Improve public communication and executive-level presentation skills.</li>
+              <li><span>- Understand production challenges firsthand to inform AI development.</li>
+              <li><span>- Practice real-world applications of Agile, Waterfall, and Lean UX methodologies.</li>
+              <li><span>- Lay foundational work for long-term digital tools in the company.</li>
             </ul>
           </div>
           <div class="tab-contents" id="skills-w25">
             <ul>
-              <li>Professional communication and storytelling</li>
-              <li>Technical observation and research</li>
-              <li>Production floor insight</li>
-              <li>Project planning and documentation</li>
+              <li><span>- Professional communication and storytelling</li>
+              <li><span>- Technical observation and research</li>
+              <li><span>- Production floor insight</li>
+              <li><span>- Project planning and documentation</li>
             </ul>
           </div>
         </div>
@@ -275,26 +275,26 @@
           </div>
           <div class="tab-contents active-tab" id="overview-s25">
             <ul>
-              <li>Built and tested the MHICA intranet using a development stack suited for internal deployment.</li>
-              <li>Worked on an AI object detection model that identifies faulty vs. correct ribs used in aircraft production.</li>
-              <li>Collaborated with teams to collect labeled data and run model inference tests.</li>
-              <li>Designed the project to eventually scale across other parts beyond ribs, creating a long-term production solution.</li>
+              <li><span>- Built and tested the MHICA intranet using a development stack suited for internal deployment.</li>
+              <li><span>- Worked on an AI object detection model that identifies faulty vs. correct ribs used in aircraft production.</li>
+              <li><span>- Collaborated with teams to collect labeled data and run model inference tests.</li>
+              <li><span>- Designed the project to eventually scale across other parts beyond ribs, creating a long-term production solution.</li>
             </ul>
           </div>
           <div class="tab-contents" id="learninggoals-s25">
             <ul>
-              <li>Deploy real-world software that can help internal teams work smarter.</li>
-              <li>Fine-tune object detection for rib identification and classification.</li>
-              <li>Collaborate across production, engineering, and development teams to build trust in the solution.</li>
-              <li>Create documentation and visuals for cross-departmental usage.</li>
+              <li><span>- Deploy real-world software that can help internal teams work smarter.</li>
+              <li><span>- Fine-tune object detection for rib identification and classification.</li>
+              <li><span>- Collaborate across production, engineering, and development teams to build trust in the solution.</li>
+              <li><span>- Create documentation and visuals for cross-departmental usage.</li>
             </ul>
           </div>
           <div class="tab-contents" id="skills-s25">
             <ul>
-              <li>Full-stack web development (React, Next.js, CSS)</li>
-              <li>AI model training and evaluation</li>
-              <li>Data analysis and debugging</li>
-              <li>Technical documentation</li>
+              <li><span>- Full-stack web development (React, Next.js, CSS)</li>
+              <li><span>- AI model training and evaluation</li>
+              <li><span>- Data analysis and debugging</li>
+              <li><span>- Technical documentation</li>
             </ul>
           </div>
         </div>
@@ -335,19 +335,25 @@
 
 <!-- Tab script -->
 <script>
-  function opentab(tabname) {
-    var allTabLinks = document.getElementsByClassName("tab-links");
-    var allTabContents = document.getElementsByClassName("tab-contents");
-    for (var tablink of allTabLinks) {
-      tablink.classList.remove("active-link");
+    function opentab(tabname) {
+      // Get the clicked tab and the section it's in
+      const clickedTab = event.currentTarget;
+      const container = clickedTab.closest(".container");
+  
+      // Get all tabs and contents in this section only
+      const tabLinks = container.querySelectorAll(".tab-links");
+      const tabContents = container.querySelectorAll(".tab-contents");
+  
+      // Remove active classes from all tabs and contents
+      tabLinks.forEach(link => link.classList.remove("active-link"));
+      tabContents.forEach(content => content.classList.remove("active-tab"));
+  
+      // Add active classes to the clicked tab and corresponding content
+      clickedTab.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
     }
-    for (var tabcontent of allTabContents) {
-      tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-  }
-</script>
+  </script>
+  
 
 </body>
 </html>

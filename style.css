@@ -245,3 +245,13 @@ nav ul li a:hover::after{
     background: #ff004f;
     transform: translateY(-10px);
 }
+
+#acknowledgments {
+    padding: 60px 0 100px 0; /* top and bottom spacing */
+    color: #b54769; /* matching the red/pink tone you use elsewhere */
+  }
+  
+  #acknowledgments h1 {
+    margin-bottom: 15px; /* add a gap below the title */
+  }
+  
