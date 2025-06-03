@@ -1,238 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/fbd4c93074.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/fbd4c93074.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<!-- Header -->
 <div id="header">
+  <div class="container">
+    <nav>
+      <img src="images/logo.png" class="logo">
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#cooptitle-f23">Work Term F23</a></li>
+        <li><a href="#cooptitle-s24">Work Term S24</a></li>
+        <li><a href="#cooptitle-w25">Work Term W25</a></li>
+        <li><a href="#cooptitle-s25">Work Term S25</a></li>
+        <li><a href="#services-f23">Takeaways F23</a></li>
+        <li><a href="#services-s24">Takeaways S24</a></li>
+        <li><a href="#services-w25">Takeaways W25</a></li>
+        <li><a href="#services-s25">Takeaways S25</a></li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <p>Aspiring Software Engineer</p>
+      <h1>Hi, I'm <br><span>Shahmeer </span>Shahid</h1>
+    </div>
+  </div>
+</div>
+
+<!-- F23 Section -->
+<div id="cooptitle-f23">
     <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
+      <h1 class="term-title"><br><span>Fall</span> 20<span>23</span> Work Term</h1>
+    </div>
+  </div>
+  
+  <div id="about-f23">
+    <div class="container">
+      <div class="row-f23">
+        <div class="about-col-1-f23">
+          <img src="images/New.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">Bombardier</h1>
+          <p>As a software developer, I worked jointly with the Methods team, resolving the issues that arose in the production line of aircrafts. Surrounded by all kinds of engineers, I was given the opportunity to gain hands-on experience from many great minds and watch the work I did truly make a difference.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('overview-f23')">Overview</p>
+            <p class="tab-links" onclick="opentab('learninggoals-f23')">Learning Goals</p>
+            <p class="tab-links" onclick="opentab('skills-f23')">Skills</p>
+          </div>
+          <div class="tab-contents active-tab" id="overview-f23">
             <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#cooptitle">Work Term</a></li>
-                <li><a href="#services">Takeaways</a></li>
-                <!--<li><a href="#">Portfolio</a></li>--->
-                <!--<li><a href="#">Contact</a></li>--->
+              <li>A typical day of work required me to:<br><br><span>- Attend Boardwalk meetings (Daily standup to acquire the plan of the day)</span></li>
+              <li><span>- Update NCR’s (Non-Conformance Reports)</span></li>
+              <li><span>- Format the list of NCR’s into an Excel. (Used by supervisors in their meeting)</span></li>
+              <li><span>- Pursue side projects for the company in any downtime</span></li>
             </ul>
-        </nav>
-        <div class="header-text">
-            <p>Aspiring Software Engineer</p>
-            <h1>Hi, I'm <br><span>Shahmeer </span>Shahid</h1>
+          </div>
+          <div class="tab-contents" id="learninggoals-f23">
+            <ul>
+              <li>I started the work term with a few goals in mind, such as:<br><br><span>- Pushing myself to be creative and think outside the box</span></li>
+              <li><span>- Not shying away from a new work environment and applying myself</span></li>
+              <li><span>- Communicating effectively in the work I do and to the people I meet</span></li>
+              <li><span>- Asking questions whenever I seek clarification</span></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="skills-f23">
+            <ul>
+              <li>Some skills I had the chance to develop include:<br><br><span>- Communication skills</span></li>
+              <li><span>- Time management skills</span></li>
+              <li><span>- Programming abilities</span></li>
+              <li><span>- Utilizing Artificial Intelligence</span></li>
+              <li><span>- Problem solving skills</span></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<div id="cooptitle">
+  </div>
+  
+  <div id="services-f23">
     <div class="container">
-        <h1 class="term-title"><br><span>Fall</span> 20<span>23</span> Work Term</h1>
-    </div>
-</div>
-
-<!------- F23 Section --------------->
-<!------- about section ------------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/New.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">Bombardier</h1>
-                <p>As a software developer, I worked jointly with the Methods team, resolving the issues that arose in the production line of aircrafts. Surrounded by all kinds of engineers, I was given the opportunity to gain hands-on experience from many great minds and watch the work I did truly make a difference.</p>
-
-                <div class="tab-titles">
-                    <!-- Use common class and pass the unique tab content IDs -->
-                    <p class="tab-links active-link" onclick="opentab('overview')">Overview</p>
-                    <p class="tab-links" onclick="opentab('learninggoals')">Learning Goals</p>
-                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
-                </div>
-
-                <!-- Use unique IDs for each tab content -->
-                <div class="tab-contents active-tab" id="overview">
-                    <ul>
-                        <li>A typical day of work required me to:<br><br><span>- Attend Boardwalk meetings (Daily standup to acquire the plan of the day)</span></li>
-                        <li><span>- Update NCR’s (Non-Conformance Reports)</span></li>
-                        <li><span>- Format the list of NCR’s into an Excel. (Used by supervisors in their meeting)</span></li>
-                        <li><span>- Pursue side projects for the company in any downtime</span></li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="learninggoals">
-                    <ul>
-                        <li>I started the work term with a few goals in mind, such as:<br><br><span>- Pushing myself to be creative and think outside the box</span></li>
-                        <li><span>- Not shying away from a new work environment and applying myself</span></li>
-                        <li><span>- Communicating effectively in the work I do and to the people I meet</span></li>
-                        <li><span>- Asking questions whenever I seek clarification</span></li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="skills">
-                    <ul>
-                        <li>Some skills I had the chance to develop include:<br><br><span>- Communication skills</span></li>
-                        <li><span>- Time management skills</span></li>
-                        <li><span>- Programming abilities</span></li>
-                        <li><span>- Utilizing Artificial Intelligence</span></li>
-                        <li><span>- Problem solving skills</span></li>
-                    </ul>
-                </div>
-            </div>
+      <h1 class="sub-title">What did I learn?</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-user-secret"></i>
+          <h2>Anomaly Detection</h2>
+          <p>One of the major projects I worked on was the Foreign Object Debris (FOD) Detection System. FOD’s are any objects found inside of an aircraft that should not be left there, such as spare tools, safety goggles, or even a lighter. When I noticed that FOD’s are seemingly harmless but can be detrimental to an aircraft, what started simply as an idea became a full scale project with the end goal of creating some sort of system to detect possible FOD’s. Pursuing a project I was very passionate about at the office made me learn a great deal on working with Artificial Intelligence, automation, and even sharpened my Python skills. I also was able to work with technology I had never even heard of before, like Raspberry PI and OpenCV. It was quite a journey to have gone from formulating a cool idea, to doing an incredible amount of research, to putting in the work and finally watching it all come to fruition, and that kind of learning and experience was invaluable.<br><br>A frame of this project running is shown in the figure above. In my hands, I hold a lighter and a screwdriver, which are both FOD’s. The trained AI model is able to detect these objects, identify them, and produce a percentage on how confident it is that the identification is correct.</p>
         </div>
-    </div>
-</div>
-<!------------ learned ------------>
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">What did I learn?</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-user-secret"></i>
-                <h2>Anomaly Detection</h2>
-                <p>One of the major projects I worked on was the Foreign Object Debris (FOD) Detection System. FOD’s are any objects found inside of an aircraft that should not be left there, such as spare tools, safety goggles, or even a lighter. When I noticed that FOD’s are seemingly harmless but can be detrimental to an aircraft, what started simply as an idea became a full scale project with the end goal of creating some sort of system to detect possible FOD’s. Pursuing a project I was very passionate about at the office made me learn a great deal on working with Artificial Intelligence, automation, and even sharpened my Python skills. I also was able to work with technology I had never even heard of before, like Raspberry PI and OpenCV. It was quite a journey to have gone from formulating a cool idea, to doing an incredible amount of research, to putting in the work and finally watching it all come to fruition, and that kind of learning and experience was invaluable.<br><br>A frame of this project running is shown in the figure above. In my hands, I hold a lighter and a screwdriver, which are both FOD’s. The trained AI model is able to detect these objects, identify them, and produce a percentage on how confident it is that the identification is correct.</p>
-                <!--<a href="#">Learn more</a>-->
-            </div>
-            <div>
-                <i class="fa-solid fa-pencil"></i>
-                <h2>Non-Conformance Reports</h2>
-                <p>In the making of an aircraft, the trajectory of creation is never a steady incline, and because it is inevitable that delays and issues will be raised, the better the workers communicate, the quicker there can be a solution. Non-conformance reports, or NCR’s for short, are what the production team raises whenever there is an issue with a part in the aircraft, and the Methods team is the in-between to liaise these NCR’s to the Quality Assurance team, and receive feedback on what the next step is. My role allowed me to accurately depict what the NCR’s being sent from Production were, and organize them in a manner that can be easily transferred to Quality Assurance. I also learned a great deal of Excel, by outputting the NCR’s from the dashboard onto a spreadsheet and organizing them in a manner that can be presented in team meetings. I took it a step further by diving into a mini-project, which gathered all the NCR’s across all the aircrafts and graphed them on a weekly basis in an automated manner, showcasing trends in how the raised NCR’s are being closed as the weeks progress. This display of trends became a wide success not only in team meetings, but also quite simply in the closing of NCR’s.</p>
-                <!--<a href="#">Learn more</a>-->
-            </div>
-            <div>
-                <i class="fa-solid fa-list-check"></i>
-                <h2>Project Management</h2>
-                <p>Working as a software developer intern seemed like I would be bound to all things software, but in actuality I dove into many different fields. While working with aircrafts led to a great deal of focus on aerospace, I also worked on projects of varying lengths, and thus learned about project management. The making of an aircraft has become fairly predictable and repetitive, and thus my role in the Methods team, viewing each aircraft as an individual project meant I had a timeline written out for me. However when it came to working on my own projects, I had no idea on what kind of time and effort it would require to see the project through. Theorizing a rough timeline that I could bring to my supervisor quickly fell apart the moment I hit a hiccup, be it from reaching a sticking point in the project, or be it from the inability to produce any spare time to work on the project because it was a busy day of NCR’s at the office. Due to this, I began to understand how to best manage my time, and more to the point, how to manage a project. I learned the importance of creating buffers within a project timeline, accounting for any possible delays, as well as how to be realistic with formulating a completion date. I also went the extra mile by researching features of project management, such as a scope, time and budget, and constructed a timeline I could not only use to visually showcase the project to my supervisor, but to also aid me in adhering to my goals and keeping myself accountable.</p>
-                <!--<a href="#">Learn more</a>-->
-            </div>
+        <div>
+          <i class="fa-solid fa-pencil"></i>
+          <h2>Non-Conformance Reports</h2>
+          <p>In the making of an aircraft, the trajectory of creation is never a steady incline, and because it is inevitable that delays and issues will be raised, the better the workers communicate, the quicker there can be a solution. Non-conformance reports, or NCR’s for short, are what the production team raises whenever there is an issue with a part in the aircraft, and the Methods team is the in-between to liaise these NCR’s to the Quality Assurance team, and receive feedback on what the next step is. My role allowed me to accurately depict what the NCR’s being sent from Production were, and organize them in a manner that can be easily transferred to Quality Assurance. I also learned a great deal of Excel, by outputting the NCR’s from the dashboard onto a spreadsheet and organizing them in a manner that can be presented in team meetings. I took it a step further by diving into a mini-project, which gathered all the NCR’s across all the aircrafts and graphed them on a weekly basis in an automated manner, showcasing trends in how the raised NCR’s are being closed as the weeks progress. This display of trends became a wide success not only in team meetings, but also quite simply in the closing of NCR’s.</p>
         </div>
+        <div>
+          <i class="fa-solid fa-list-check"></i>
+          <h2>Project Management</h2>
+          <p>Working as a software developer intern seemed like I would be bound to all things software, but in actuality I dove into many different fields. While working with aircrafts led to a great deal of focus on aerospace, I also worked on projects of varying lengths, and thus learned about project management. The making of an aircraft has become fairly predictable and repetitive, and thus my role in the Methods team, viewing each aircraft as an individual project meant I had a timeline written out for me. However when it came to working on my own projects, I had no idea on what kind of time and effort it would require to see the project through. Theorizing a rough timeline that I could bring to my supervisor quickly fell apart the moment I hit a hiccup, be it from reaching a sticking point in the project, or be it from the inability to produce any spare time to work on the project because it was a busy day of NCR’s at the office. Due to this, I began to understand how to best manage my time, and more to the point, how to manage a project. I learned the importance of creating buffers within a project timeline, accounting for any possible delays, as well as how to be realistic with formulating a completion date. I also went the extra mile by researching features of project management, such as a scope, time and budget, and constructed a timeline I could not only use to visually showcase the project to my supervisor, but to also aid me in adhering to my goals and keeping myself accountable.</p>
+        </div>
+      </div>
     </div>
+  </div>
+  
+
+<!-- S24 Section -->
+<div id="cooptitle-s24">
+    <div class="container">
+      <h1 class="term-title2"><br><span>Summer</span> 20<span>24</span> Work Term</h1>
+    </div>
+  </div>
+  
+  <div id="about-s24">
+    <div class="container">
+      <div class="row-s24">
+        <div class="about-col-1-s24">
+          <img src="images/chatbot.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">Onward Manufacturing</h1>
+          <p>As a web developer, I worked closely with the CEO, designing the website closely aligned with his vision. Cooperating with the Graphics and Marketing team, I was able to learn a lot about how meticulous designing even a simple website can be, and how to account for all kinds of nuances.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('overview-s24')">Overview</p>
+            <p class="tab-links" onclick="opentab('learninggoals-s24')">Learning Goals</p>
+            <p class="tab-links" onclick="opentab('skills-s24')">Skills</p>
+          </div>
+          <div class="tab-contents active-tab" id="overview-s24">
+            <ul>
+                <li>A typical day of work required me to:<br><br><span>- Attend morning meetings to learn my daily tasks, and update the team on my progress.</span></li>
+                <li><span>- Tend to any issues raised by other team members accessing the website.</span></li>
+                <li><span>- Update any outstanding issues or tasks on ClickUp to prioritize based on urgency.</span></li>
+                <li><span>- Pursue side projects for the company in any downtime.</span></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="learninggoals-s24">
+            <ul>
+                <li>I started the work term with a few goals in mind, such as:<br><br><span>- Learning how to apply my frontend developing skills.</span></li>
+                <li><span>- Applying myself and being creative with my pursuits.</span></li>
+                <li><span>- Communicating effectively in the work I do and to the people I meet</span></li>
+                <li><span>- Asking questions whenever I seek clarification</span></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="skills-s24">
+            <ul>
+                <li>Some skills I had the chance to develop include:<br><br><span>- Frontend coding skills</span></li>
+                <li><span>- Time management skills</span></li>
+                <li><span>- Programming abilities</span></li>
+                <li><span>- Utilizing Artificial Intelligence</span></li>
+                <li><span>- Problem-solving skills</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="services-s24">
+    <div class="container">
+      <h1 class="sub-title">What did I learn?</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-user-secret"></i>
+          <h2>AI Chatbot Development</h2>
+          <p>One of the key projects I took on was the creation of an AI chatbot for the Broil King website. This chatbot was designed to assist users by answering questions related to Broil King barbeque grills and their features. To achieve this, I trained a model that could efficiently navigate through a vast amount of data specific to the company’s product line. One of the biggest challenges was restricting the chatbot’s knowledge base solely to the information available on the Broil King website. By limiting its responses, I ensured that users received accurate answers grounded in the company's actual product information without the risk of outside data skewing the results. This task allowed me to grow my knowledge in AI, machine learning, and natural language processing, as well as hone my Python programming skills. Bringing this project to life required persistence and meticulous testing, but seeing the chatbot successfully assist customers was immensely rewarding.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-pencil"></i>
+          <h2>Dynamic FAQ Page</h2>
+          <p>In addition to the chatbot, I developed a dynamic FAQ page using HTML, CSS, JavaScript, and React. The challenge here was to work outside the existing WordPress and PHP-based infrastructure that the website was originally built on. Instead of refactoring legacy code, I focused on building a stand-alone page that could guide users to the ideal grill. The FAQ page utilized a multi-level filtering system, allowing users to navigate through various features such as grill size, fuel type, and cooking preferences to receive a personalized product suggestion. This project not only sharpened my front-end development skills but also allowed me to creatively tackle UX/UI challenges. The page became a valuable tool for both customers and the marketing team by streamlining the purchasing decision-making process. I was proud to see it being actively used and well-received by both teams.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-list-check"></i>
+          <h2>Cross-functional Collaboration</h2>
+          <p>Working as a web developer, I initially had no idea what to expect, but the opportunity to work independently and closely with the CEO allowed me to grow immensely in both technical and interpersonal skills. From working on complex code to communicating project progress across teams, I became adept at problem-solving in real time. With frequent interactions with departments not only in Canada but also in the US, Germany, the UK, and other countries, I learned how to effectively collaborate across borders. One of my most valuable contributions was keeping track of website-related issues raised by various teams, prioritizing them based on urgency, and ensuring that they were completed in a timely manner. The combination of my technical work, along with the communication and coordination skills I developed, left me with a deep appreciation for the complexities of web development within a global enterprise.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Winter 2025 Section -->
+<div id="cooptitle-w25">
+    <div class="container">
+      <h1 class="term-title"><br><span>Winter</span> 20<span>25</span> Work Term</h1>
+    </div>
+  </div>
+  
+  <div id="about-w25">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/w25_presentation_placeholder.png" alt="Winter 2025 Presentation">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">MHICA (Mississauga)</h1>
+          <p>MHICA is a Canadian aerospace manufacturer based in Mississauga that specializes in building and assembling aircraft components. In my Winter 2025 work term, I was given the opportunity to introduce MHICA's work and values to multiple stakeholders, including a high-profile presentation for Pierre Poilievre. This term focused heavily on laying the foundation for bigger projects to come.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('overview-w25')">Overview</p>
+            <p class="tab-links" onclick="opentab('learninggoals-w25')">Learning Goals</p>
+            <p class="tab-links" onclick="opentab('skills-w25')">Skills</p>
+          </div>
+          <div class="tab-contents active-tab" id="overview-w25">
+            <ul>
+              <li>Led the creation and delivery of a corporate presentation on MHICA to key stakeholders including Pierre Poilievre.</li>
+              <li>Explored object detection AI to improve inspection processes within aircraft production.</li>
+              <li>Worked temporarily as a production worker (e.g., riveting) to gain insight into on-floor challenges and better align AI development with real needs.</li>
+              <li>Gathered requirements and wrote user stories for a future internal intranet website.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="learninggoals-w25">
+            <ul>
+              <li>Improve public communication and executive-level presentation skills.</li>
+              <li>Understand production challenges firsthand to inform AI development.</li>
+              <li>Practice real-world applications of Agile, Waterfall, and Lean UX methodologies.</li>
+              <li>Lay foundational work for long-term digital tools in the company.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="skills-w25">
+            <ul>
+              <li>Professional communication and storytelling</li>
+              <li>Technical observation and research</li>
+              <li>Production floor insight</li>
+              <li>Project planning and documentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="services-w25">
+    <div class="container">
+      <h1 class="sub-title">What did I learn?</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-briefcase"></i>
+          <h2>Corporate Presentation</h2>
+          <p>Creating and leading a high-level presentation on MHICA for stakeholders — including Pierre Poilievre — was a challenge that sharpened my leadership, public speaking, and narrative skills. Presenting the company’s operations and values to important figures helped me better understand what it means to represent a business on a professional stage.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-sitemap"></i>
+          <h2>Planning the Intranet</h2>
+          <p>Collaborating with my supervisor, I started outlining the company’s internal intranet. Using Agile, Lean UX, and Waterfall processes, I gathered requirements and user stories, carefully designing an approach that would scale. My classroom understanding of development methodologies was finally put into action.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-microscope"></i>
+          <h2>Exploring AI with Hands-on Insight</h2>
+          <p>Before starting my AI research, I worked alongside production staff to understand real issues on the floor — including the intricacies of something as simple as riveting. This firsthand experience informed my AI planning by helping me visualize what issues my model would need to detect and prevent, making my future implementation far more grounded and relevant.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Summer 2025 Section -->
+<div id="cooptitle-s25">
+    <div class="container">
+      <h1 class="term-title2"><br><span>Summer</span> 20<span>25</span> Work Term</h1>
+    </div>
+  </div>
+  
+  <div id="about-s25">
+    <div class="container">
+      <div class="row-s24">
+        <div class="about-col-1-s24">
+          <img src="images/s25_ai_placeholder.png" alt="Summer 2025 AI Project">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">MHICA (Mississauga)</h1>
+          <p>After a foundational Winter term at MHICA, I entered Summer 2025 ready to build. I focused on two major tasks: developing the company’s internal intranet and implementing an AI-based object detection project that could spot defective aircraft ribs with high accuracy.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('overview-s25')">Overview</p>
+            <p class="tab-links" onclick="opentab('learninggoals-s25')">Learning Goals</p>
+            <p class="tab-links" onclick="opentab('skills-s25')">Skills</p>
+          </div>
+          <div class="tab-contents active-tab" id="overview-s25">
+            <ul>
+              <li>Built and tested the MHICA intranet using a development stack suited for internal deployment.</li>
+              <li>Worked on an AI object detection model that identifies faulty vs. correct ribs used in aircraft production.</li>
+              <li>Collaborated with teams to collect labeled data and run model inference tests.</li>
+              <li>Designed the project to eventually scale across other parts beyond ribs, creating a long-term production solution.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="learninggoals-s25">
+            <ul>
+              <li>Deploy real-world software that can help internal teams work smarter.</li>
+              <li>Fine-tune object detection for rib identification and classification.</li>
+              <li>Collaborate across production, engineering, and development teams to build trust in the solution.</li>
+              <li>Create documentation and visuals for cross-departmental usage.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="skills-s25">
+            <ul>
+              <li>Full-stack web development (React, Next.js, CSS)</li>
+              <li>AI model training and evaluation</li>
+              <li>Data analysis and debugging</li>
+              <li>Technical documentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="services-s25">
+    <div class="container">
+      <h1 class="sub-title">What did I learn?</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-network-wired"></i>
+          <h2>Intranet Site Development</h2>
+          <p>Building the MHICA intranet pushed me to consider backend and frontend integration, UI/UX design, and long-term maintainability. Working iteratively with feedback from real users, I deployed a modular and navigable system that supports departmental communication, document sharing, and HR tools.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-brain"></i>
+          <h2>Object Detection for Aircraft Ribs</h2>
+          <p>I applied computer vision to detect faulty ribs using a trained object detection model. The focus was to make the detection highly accurate and generalizable. After internal testing, we found strong potential to expand this to other components, offering a future-proof method to reduce production errors.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-people-arrows"></i>
+          <h2>Cross-Functional Integration</h2>
+          <p>Seeing my work span from the development room to the production floor taught me the importance of communication and context. It’s not enough to build software that works — it has to work <em>for the people who use it</em>. Balancing feedback from engineers, tech staff, and shopfloor workers made the final product stronger and more trusted.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Acknowledgments -->
+<div id="acknowledgments">
+  <div class="container">
+    <h1 class="sub-title">Acknowledgments</h1>
+    <p>I would like to thank my supervisors and colleagues at Bombardier, Onward Manufacturing, and MHICA for their mentorship and support. This portfolio would not have been possible without their guidance and encouragement throughout each co-op term.</p>
+  </div>
 </div>
 
+<!-- Tab script -->
 <script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
+  function opentab(tabname) {
+    var allTabLinks = document.getElementsByClassName("tab-links");
+    var allTabContents = document.getElementsByClassName("tab-contents");
+    for (var tablink of allTabLinks) {
+      tablink.classList.remove("active-link");
     }
-
-</script>
-
-<!------- S24 Section --------------->
-
-<div id="cooptitle"></div>
-    <div class="container">
-        <h1 class="term-title2"><br><span>Summer</span> 20<span>24</span> Work Term</h1>
-    </div>
-</div>
-
-<!------- about section ------------->
-<div id="about">
-    <div class="container">
-        <div class="row-s24">
-            <div class="about-col-1-s24">
-                <img src="images/chatbot.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">Onward Manufacturing</h1>
-                <p>As a web developer, I worked closely with the CEO, designing the website closely aligned with his vision. Cooperating with the Graphics and Marketing team, I was able to learn a lot about how meticulous designing even a simple website can be, and how to account for all kinds of nuances.</p>
-
-                <div class="tab-titles">
-                    <p class="tab-links" onclick="opentab('overview-s24')">Overview</p>
-                    <p class="tab-links" onclick="opentab('learninggoals-s24')">Learning Goals</p>
-                    <p class="tab-links" onclick="opentab('skills-s24')">Skills</p>
-                </div>
-
-                <!-- Use unique IDs for the S24 section -->
-                <div class="tab-contents" id="overview-s24">
-                    <ul>
-                        <li>A typical day of work required me to:<br><br><span>- Attend morning meetings to learn my daily tasks, and update the team on my progress.</span></li>
-                        <li><span>- Tend to any issues raised by other team members accessing the website.</span></li>
-                        <li><span>- Update any outstanding issues or tasks on ClickUp to prioritize based on urgency.</span></li>
-                        <li><span>- Pursue side projects for the company in any downtime.</span></li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="learninggoals-s24">
-                    <ul>
-                        <li>I started the work term with a few goals in mind, such as:<br><br><span>- Learning how to apply my frontend developing skills.</span></li>
-                        <li><span>- Applying myself and being creative with my pursuits.</span></li>
-                        <li><span>- Communicating effectively in the work I do and to the people I meet</span></li>
-                        <li><span>- Asking questions whenever I seek clarification</span></li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="skills-s24">
-                    <ul>
-                        <li>Some skills I had the chance to develop include:<br><br><span>- Frontend coding skills</span></li>
-                        <li><span>- Time management skills</span></li>
-                        <li><span>- Programming abilities</span></li>
-                        <li><span>- Utilizing Artificial Intelligence</span></li>
-                        <li><span>- Problem-solving skills</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!------------ learned ------------>
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">What did I learn?</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-user-secret"></i>
-                <h2>AI Chatbot Development</h2>
-                <p>One of the key projects I took on was the creation of an AI chatbot for the Broil King website. This chatbot was designed to assist users by answering questions related to Broil King barbeque grills and their features. To achieve this, I trained a model that could efficiently navigate through a vast amount of data specific to the company’s product line. One of the biggest challenges was restricting the chatbot’s knowledge base solely to the information available on the Broil King website. By limiting its responses, I ensured that users received accurate answers grounded in the company's actual product information without the risk of outside data skewing the results. This task allowed me to grow my knowledge in AI, machine learning, and natural language processing, as well as hone my Python programming skills. Bringing this project to life required persistence and meticulous testing, but seeing the chatbot successfully assist customers was immensely rewarding.</p>
-                <!--<a href="#">Learn more</a>-->
-            </div>
-            <div>
-                <i class="fa-solid fa-pencil"></i>
-                <h2>Dynamic FAQ Page</h2>
-                <p>In addition to the chatbot, I developed a dynamic FAQ page using HTML, CSS, JavaScript, and React. The challenge here was to work outside the existing WordPress and PHP-based infrastructure that the website was originally built on. Instead of refactoring legacy code, I focused on building a stand-alone page that could guide users to the ideal grill. The FAQ page utilized a multi-level filtering system, allowing users to navigate through various features such as grill size, fuel type, and cooking preferences to receive a personalized product suggestion. This project not only sharpened my front-end development skills but also allowed me to creatively tackle UX/UI challenges. The page became a valuable tool for both customers and the marketing team by streamlining the purchasing decision-making process. I was proud to see it being actively used and well-received by both teams.</p>
-                <!--<a href="#">Learn more</a>-->
-            </div>
-            <div>
-                <i class="fa-solid fa-list-check"></i>
-                <h2>Cross-functional Collaboration</h2>
-                <p>Working as a web developer, I initially had no idea what to expect, but the opportunity to work independently and closely with the CEO allowed me to grow immensely in both technical and interpersonal skills. From working on complex code to communicating project progress across teams, I became adept at problem-solving in real time. With frequent interactions with departments not only in Canada but also in the US, Germany, the UK, and other countries, I learned how to effectively collaborate across borders. One of my most valuable contributions was keeping track of website-related issues raised by various teams, prioritizing them based on urgency, and ensuring that they were completed in a timely manner. The combination of my technical work, along with the communication and coordination skills I developed, left me with a deep appreciation for the complexities of web development within a global enterprise.</p>
-                <!--<a href="#">Learn more</a>-->
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    function opentab(tabname) {
-        // First, remove active class from all tab links and tab contents
-        var allTabLinks = document.getElementsByClassName("tab-links");
-        var allTabContents = document.getElementsByClassName("tab-contents");
-
-        for (var tablink of allTabLinks) {
-            tablink.classList.remove("active-link");
-        }
-        for (var tabcontent of allTabContents) {
-            tabcontent.classList.remove("active-tab");
-        }
-
-        // Then, activate the clicked tab and its associated content
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+    for (var tabcontent of allTabContents) {
+      tabcontent.classList.remove("active-tab");
     }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
 </script>
-
 
 </body>
 </html>
