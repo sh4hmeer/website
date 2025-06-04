@@ -141,6 +141,16 @@ nav ul li a:hover::after{
     border-radius: 15px;
 }
 
+.about-col-1-s25 {
+    flex-basis: 35%;
+  }
+  
+.about-col-1-s25 img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: contain;
+    }
 
 .about-col-2{
     flex-basis: 60%;
